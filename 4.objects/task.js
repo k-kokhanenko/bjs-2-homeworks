@@ -26,7 +26,7 @@ Student.prototype.getAverage = function () {
             marksSum += this.marks[i];
         }
 
-        return (marksSum / this.marks.length).toFixed(1);
+        return marksSum / this.marks.length;
     }
 
     return 0;
