@@ -14,6 +14,8 @@ Student.prototype.addMarks = function (...marks) {
         for (let i = 0; i < marks.length; i++) {
             this.marks[i] = marks[i];
         }
+
+        return this.marks;
     }
 }
 
