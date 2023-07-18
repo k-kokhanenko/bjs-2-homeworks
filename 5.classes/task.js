@@ -88,7 +88,7 @@ class Library {
             return null;
         }
 
-        this.books.splice(
+        return this.books.splice(
             this.books.map(item => item.name).indexOf(bookName),
             1
         );
