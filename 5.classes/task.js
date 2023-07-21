@@ -89,6 +89,6 @@ class Library {
         }
 
         const pos = this.books.map(item => item.name).indexOf(bookName);
-        return this.books.splice(pos, 1);
+        return this.books.splice(pos, 1)[0];
     }
 }
