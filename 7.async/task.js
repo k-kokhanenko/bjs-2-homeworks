@@ -5,9 +5,13 @@ class AlarmClock {
     }
 
     addClock(time, callback) {
-        if (time === undefined && callback === undefined) {
+        if (time === undefined) {
             throw new Error("Отсутствуют обязательные аргументы");
         }
+
+        if (callback === undefined) {
+            throw new Error("Отсутствуют обязательные аргументы");
+        }        
 
         // Проверьте, есть ли звонок с таким же временем. Если есть, выведите предупреждение в консоль с помощью console.warn('Уже присутствует звонок на это же время').
         let result = this.alarmCollection.find(item => item.time == time);
